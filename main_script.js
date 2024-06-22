@@ -144,9 +144,6 @@ function scaleConversion(scaleData) {
   }
 
 
-
-
-
   function get_QUAKEone() {
     var url = "http://files.quake.one/list.json";
     var xhr = new XMLHttpRequest();
