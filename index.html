@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>コメコメ地震情報!!!</title>
+    <style>
+        body {
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Wolfx_api"></div>
+    <div id="image-container"></div>
+    <div class="textbox-container" id="maxIntensityContainer"></div>
+    <div id="map" style="height:300px;"></div>
+    <script src="main_script.js"></script>
+    <script>
+        function update() {
+            var wolfxData = wolfx_api();
+            var maxIntensityContainer = document.getElementById('maxIntensityContainer');
+            maxIntensityContainer.textContent = wolfxData["MaxIntensity"];
+        console.log(convertion(0))
+        }
+        update();
+        setInterval(update, 100000);
+    </script>
+
+    <img id="koisi_image" src="Required_files\こいし（笑い）.png" alt="こいし（笑い）の画像">
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+#koisi_image {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    height: 550px;
+    width: auto;
+    pointer-events: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-touch-callout:none;
+    -moz-user-select:none;
+    user-select:none;
+}
+.textbox-container {
+    width: 150px; /* テキストボックスの幅 */
+    height: 150px; /* テキストボックスの高さ */
+    border: 2px solid #000; /* 枠線 */
+    display: flex;
+    color: black;
+    justify-content: center; /* 水平方向の中央揃え */
+    background-color: red; /* テキストボックスの背景色を指定 */
+    font-size: 100px; /* テキストのフォントサイズ */
+}
+.textbox {
+    width: 100%; /* テキストボックス内の文字の幅 */
+    height:100%; /* テキストボックス内の文字の高さ */
+    text-align: center; /* テキストの中央揃え */
+    border: none; /* 枠線をなしにする */
+    outline: none; /* フォーカス時のアウトラインをなしにする */
+    font-weight: bold; /* テキストの太字 */
+}
